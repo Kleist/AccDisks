@@ -75,6 +75,11 @@ static void disc_update(Disc *disc) {
 static void disc_draw(GContext *ctx, Disc *disc) {
   graphics_context_set_fill_color(ctx, GColorWhite);
   graphics_fill_circle(ctx, GPoint(disc->pos.x, disc->pos.y), disc->radius);
+  graphics_context_set_fill_color(ctx, GColorBlack);
+  GRect rect;
+  rect.origin = GPoint(disc->pos.x-disc->radius/4, disc->pos.y-disc->radius/4);
+  rect.size = GSize(disc->radius/2, disc->radius/2);
+  graphics_draw_rect(ctx, rect);
 }
 
 static void disc_layer_update_callback(Layer *me, GContext *ctx) {
