@@ -1,0 +1,18 @@
+{
+    "appKeys": {},
+    "versionLabel": "1.0",
+    "versionCode": 1,
+    "shortName": "AccDisks",
+    "companyName": "andreaskleist@gmail.com",
+    "watchapp": {
+        "watchface": false
+    },
+    "longName": "AccDisks",
+    "resources": {
+        "media": []
+    },
+    "uuid": "00841b29-be82-418f-bd31-cac60e0e435f",
+    "capabilities": [
+        ""
+    ]
+}
